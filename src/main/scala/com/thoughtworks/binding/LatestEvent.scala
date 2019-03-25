@@ -38,6 +38,15 @@ class LatestEvent[E <: Event](eventTarget: EventTarget, eventType: String) exten
 }
 
 object LatestEvent {
+  def toggle(eventTarget: EventTarget) = {
+    new LatestEvent[Event](eventTarget, "toggle")
+  }
+  def input(eventTarget: EventTarget) = {
+    new LatestEvent[Event](eventTarget, "input")
+  }
+  def change(eventTarget: EventTarget) = {
+    new LatestEvent[Event](eventTarget, "change")
+  }
   def abort(eventTarget: EventTarget) = {
     new LatestEvent[Event](eventTarget, "abort")
   }
