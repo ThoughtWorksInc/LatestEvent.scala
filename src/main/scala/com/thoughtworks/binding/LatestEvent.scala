@@ -53,6 +53,9 @@ object LatestEvent {
   def error(eventTarget: EventTarget) = {
     new LatestEvent[Event](eventTarget, "error")
   }
+  def timeout(eventTarget: EventTarget) = {
+    new LatestEvent[Event](eventTarget, "timeout")
+  }
   def load(eventTarget: EventTarget) = {
     new LatestEvent[UIEvent](eventTarget, "load")
   }
