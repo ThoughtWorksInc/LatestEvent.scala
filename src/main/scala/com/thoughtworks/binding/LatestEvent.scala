@@ -38,6 +38,9 @@ class LatestEvent[E <: Event](eventTarget: EventTarget, eventType: String) exten
 }
 
 object LatestEvent {
+  def hashchange(eventTarget: EventTarget) = {
+    new LatestEvent[Event](eventTarget, "hashchange")
+  }
   def toggle(eventTarget: EventTarget) = {
     new LatestEvent[Event](eventTarget, "toggle")
   }
