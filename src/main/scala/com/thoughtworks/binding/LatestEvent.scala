@@ -34,7 +34,7 @@ class LatestEvent[E <: Event](eventTarget: EventTarget, eventType: String) exten
     publisher += listener
   }
 
-  protected def value: Option[E] = cache
+  def value: Option[E] = cache
 }
 
 object LatestEvent {
