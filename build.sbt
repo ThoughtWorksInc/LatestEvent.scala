@@ -1,21 +1,11 @@
 ThisBuild / organization := "com.thoughtworks.binding"
 
-name := "LatestEvent"
+ThisBuild / evictionErrorLevel := Level.Info
 
-enablePlugins(ScalaJSPlugin)
+lazy val LatestEvent = project
 
-import Ordering.Implicits._
+lazy val LatestHTMLEvents = project.dependsOn(LatestEvent)
 
-if (VersionNumber(scalaJSVersion).numbers >= Seq(1L)) {
-  libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.0.0"
-} else {
-  libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.2.0"
-}
+publish / skip := true
 
-libraryDependencies += {
-  if (VersionNumber(scalaVersion.value).numbers >= Seq(2L, 13L)) {
-    "com.thoughtworks.binding" %%% "binding" % "12.1.0"
-  } else {
-    "com.thoughtworks.binding" %%% "binding" % "11.9.0"
-  }
-}
+enablePlugins(ScalaUnidocPlugin)

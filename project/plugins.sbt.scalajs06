@@ -4,3 +4,9 @@ dependencyOverrides += Defaults.sbtPluginExtra(
   sbtBinaryVersion.value,
   scalaBinaryVersion.value,
 )
+
+dependencyOverrides += Defaults.sbtPluginExtra(
+  "ch.epfl.scala" % "sbt-scalajs-bundler" % "0.15.0-0.6",
+  sbtBinaryVersion.value,
+  scalaBinaryVersion.value,
+)
