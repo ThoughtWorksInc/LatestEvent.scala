@@ -8,7 +8,7 @@ addSbtPlugin("com.jsuereth" % "sbt-pgp" % "2.0.2")
 
 addSbtPlugin("org.lyranthe.sbt" % "partial-unification" % "1.1.2")
 
-addSbtPlugin("com.thoughtworks.example" % "sbt-example" % "7.0.1")
+addSbtPlugin("com.thoughtworks.example" % "sbt-example" % "8.1.0")
 
 addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.7.1")
 
