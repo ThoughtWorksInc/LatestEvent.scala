@@ -2,11 +2,7 @@ enablePlugins(ScalaJSPlugin)
 
 import Ordering.Implicits._
 
-if (VersionNumber(scalaJSVersion).numbers >= Seq(1L)) {
-  libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.0.0"
-} else {
-  libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.2.0"
-}
+libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.2.0"
 
 libraryDependencies += {
   if (VersionNumber(scalaVersion.value).numbers >= Seq(2L, 13L)) {

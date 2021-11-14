@@ -9,12 +9,12 @@ import org.lrng.binding.html.AttributeFactory
 import com.thoughtworks.binding.bindable.Bindable
 
 object LatestHTMLEvents {
-  def of[E <: org.scalajs.dom.Element, AttributeObject <: AttributeFactory.Typed, V, InferredEvent <: Event](
+
+  def of[E <: org.scalajs.dom.Element, AttributeObject <: AttributeFactory.Typed, InferredEvent <: Event](
       target: E,
       attribute: AttributeObject
   )(implicit
-      mountPointBuilder: MountPointBuilder[E, AttributeObject, V],
-      asFunction: V <:< js.Function1[InferredEvent, Nothing]
+      mountPointBuilder: MountPointBuilder[E, AttributeObject, js.Function1[InferredEvent, _]]
   ): LatestEvent[InferredEvent] = {
     val propertyName = attribute.getClass.getSimpleName
     if (propertyName.startsWith("on") && propertyName.endsWith("$")) {
