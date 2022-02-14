@@ -10,7 +10,7 @@ addSbtPlugin("org.lyranthe.sbt" % "partial-unification" % "1.1.2")
 
 addSbtPlugin("com.thoughtworks.example" % "sbt-example" % "9.0.0")
 
-addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.8.0")
+addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.9.0")
 
 addSbtPlugin("com.thoughtworks.sbt-scala-js-map" % "sbt-scala-js-map" % "4.1.1")
 
