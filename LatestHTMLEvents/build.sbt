@@ -4,7 +4,7 @@ enablePlugins(ScalaJSPlugin)
 
 enablePlugins(Example)
 
-libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.13" % Test
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.14" % Test
 
 libraryDependencies += "org.lrng.binding" %%% "html" % "1.0.3"
 
