@@ -1,8 +1,10 @@
 name: Scala CI
 
 on:
-- push
-- pull_request
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   build:
@@ -20,6 +22,8 @@ jobs:
         - --addPluginSbtFile=project/plugins.sbt.scalajs06
         include:
         - scala: 2.13.7
+          sbt-args: ''
+        - scala: 3.2.2
           sbt-args: ''
 
     steps:
