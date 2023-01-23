@@ -1,5 +1,6 @@
 package com.thoughtworks.binding
 import com.thoughtworks.binding.Binding.{ChangedEvent, ChangedListener}
+import org.scalajs.dom._
 import org.scalajs.dom.raw._
 
 import scala.scalajs.js
@@ -18,7 +19,7 @@ class LatestEvent[E <: Event](eventTarget: EventTarget, eventType: String) exten
     }
   }
 
-  private val eventListener: js.Function1[E, _] = { upstreamEvent: E =>
+  private val eventListener: js.Function1[E, _] = { (upstreamEvent: E) =>
     cache = Some(upstreamEvent)
     val changedEvent = new ChangedEvent(this, cache)
     for (listener <- publisher) {
@@ -36,7 +37,7 @@ class LatestEvent[E <: Event](eventTarget: EventTarget, eventType: String) exten
   protected def value: Option[E] = cache
 }
 
-object LatestEvent {
+object LatestEvent extends UIEventDefinitions {
   def hashchange(eventTarget: EventTarget) = {
     new LatestEvent[Event](eventTarget, "hashchange")
   }
