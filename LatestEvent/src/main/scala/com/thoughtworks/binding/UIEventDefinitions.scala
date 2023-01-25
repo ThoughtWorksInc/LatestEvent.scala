@@ -51,36 +51,53 @@ private[binding] trait UIEventDefinitions {
   def DOMFocusOut(eventTarget: Element) = new LatestEvent[FocusEvent](eventTarget, "DOMFocusOut")
   def keypress(eventTarget: Element) = new LatestEvent[KeyboardEvent](eventTarget, "keypress")
   def DOMAttrModified(eventTarget: Element) = new LatestEvent[MutationEvent](eventTarget, "DOMAttrModified")
-  def DOMCharacterDataModified(eventTarget: Text) = new LatestEvent[MutationEvent](eventTarget, "DOMCharacterDataModified")
-  def DOMCharacterDataModified(eventTarget: Comment) = new LatestEvent[MutationEvent](eventTarget, "DOMCharacterDataModified")
-  def DOMCharacterDataModified(eventTarget: ProcessingInstruction) = new LatestEvent[MutationEvent](eventTarget, "DOMCharacterDataModified")
+  def DOMCharacterDataModified(eventTarget: Text) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMCharacterDataModified")
+  def DOMCharacterDataModified(eventTarget: Comment) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMCharacterDataModified")
+  def DOMCharacterDataModified(eventTarget: ProcessingInstruction) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMCharacterDataModified")
   def DOMNodeInserted(eventTarget: Element) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInserted")
   def DOMNodeInserted(eventTarget: Attr) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInserted")
   def DOMNodeInserted(eventTarget: Text) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInserted")
   def DOMNodeInserted(eventTarget: Comment) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInserted")
   def DOMNodeInserted(eventTarget: DocumentType) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInserted")
-  def DOMNodeInserted(eventTarget: ProcessingInstruction) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInserted")
-  def DOMNodeInsertedIntoDocument(eventTarget: Element) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
-  def DOMNodeInsertedIntoDocument(eventTarget: Attr) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
-  def DOMNodeInsertedIntoDocument(eventTarget: Text) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
-  def DOMNodeInsertedIntoDocument(eventTarget: Comment) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
-  def DOMNodeInsertedIntoDocument(eventTarget: DocumentType) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
-  def DOMNodeInsertedIntoDocument(eventTarget: ProcessingInstruction) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
+  def DOMNodeInserted(eventTarget: ProcessingInstruction) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeInserted")
+  def DOMNodeInsertedIntoDocument(eventTarget: Element) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
+  def DOMNodeInsertedIntoDocument(eventTarget: Attr) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
+  def DOMNodeInsertedIntoDocument(eventTarget: Text) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
+  def DOMNodeInsertedIntoDocument(eventTarget: Comment) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
+  def DOMNodeInsertedIntoDocument(eventTarget: DocumentType) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
+  def DOMNodeInsertedIntoDocument(eventTarget: ProcessingInstruction) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeInsertedIntoDocument")
   def DOMNodeRemoved(eventTarget: Element) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemoved")
   def DOMNodeRemoved(eventTarget: Attr) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemoved")
   def DOMNodeRemoved(eventTarget: Text) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemoved")
   def DOMNodeRemoved(eventTarget: Comment) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemoved")
   def DOMNodeRemoved(eventTarget: DocumentType) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemoved")
   def DOMNodeRemoved(eventTarget: ProcessingInstruction) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemoved")
-  def DOMNodeRemovedFromDocument(eventTarget: Element) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
-  def DOMNodeRemovedFromDocument(eventTarget: Attr) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
-  def DOMNodeRemovedFromDocument(eventTarget: Text) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
-  def DOMNodeRemovedFromDocument(eventTarget: Comment) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
-  def DOMNodeRemovedFromDocument(eventTarget: DocumentType) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
-  def DOMNodeRemovedFromDocument(eventTarget: ProcessingInstruction) = new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
+  def DOMNodeRemovedFromDocument(eventTarget: Element) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
+  def DOMNodeRemovedFromDocument(eventTarget: Attr) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
+  def DOMNodeRemovedFromDocument(eventTarget: Text) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
+  def DOMNodeRemovedFromDocument(eventTarget: Comment) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
+  def DOMNodeRemovedFromDocument(eventTarget: DocumentType) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
+  def DOMNodeRemovedFromDocument(eventTarget: ProcessingInstruction) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMNodeRemovedFromDocument")
   def DOMSubtreeModified(eventTarget: Window) = new LatestEvent[MutationEvent](eventTarget, "DOMSubtreeModified")
   def DOMSubtreeModified(eventTarget: Document) = new LatestEvent[MutationEvent](eventTarget, "DOMSubtreeModified")
-  def DOMSubtreeModified(eventTarget: DocumentFragment) = new LatestEvent[MutationEvent](eventTarget, "DOMSubtreeModified")
+  def DOMSubtreeModified(eventTarget: DocumentFragment) =
+    new LatestEvent[MutationEvent](eventTarget, "DOMSubtreeModified")
   def DOMSubtreeModified(eventTarget: Element) = new LatestEvent[MutationEvent](eventTarget, "DOMSubtreeModified")
   def DOMSubtreeModified(eventTarget: Attr) = new LatestEvent[MutationEvent](eventTarget, "DOMSubtreeModified")
 }
