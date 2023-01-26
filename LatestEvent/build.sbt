@@ -12,7 +12,7 @@ libraryDependencies += {
 
 libraryDependencies += {
   if (VersionNumber(scalaVersion.value).numbers >= Seq(2L, 13L)) {
-    "com.thoughtworks.binding" %%% "binding" % "12.1.0+110-53fd3428"
+    "com.thoughtworks.binding" %%% "binding" % "12.1.0+119-a0371f70"
   } else {
     "com.thoughtworks.binding" %%% "binding" % "11.9.0"
   }
