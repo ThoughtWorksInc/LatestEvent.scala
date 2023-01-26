@@ -1,4 +1,3 @@
-
 val generateUIEventDefinitions =
   taskKey[File]("Generate UIEventDefinitions.scala file from UI Events (W3C Working Draft)")
 generateUIEventDefinitions := {

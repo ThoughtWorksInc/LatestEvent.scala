@@ -6,7 +6,8 @@ import org.scalajs.dom.raw._
 import scala.scalajs.js
 import scala.scalajs.js.|
 
-/** @author 杨博 (Yang Bo)
+/** @author
+  *   杨博 (Yang Bo)
   */
 class LatestEvent[E <: Event](eventTarget: EventTarget, eventType: String) extends Binding[Option[E]] {
   private var cache: Option[E] = None
