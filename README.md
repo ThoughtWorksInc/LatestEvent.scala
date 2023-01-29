@@ -8,14 +8,15 @@
 
 ## Getting Started
 
-```
+``` scala
 def rootView = {
   val inputBinding = html"<input>"
   val value = Binding {
     val input = inputBinding.value
+
+    // Automatically recaculate whenever `input` is changed
     LatestEvent.change(input).bind
     
-    // Automatically recaculate whenever `input` is changed
     input.value
   }
   html"""<div>
