@@ -30,3 +30,9 @@ def rootView = {
 ```
 
 It can be also used as an alternative to a routing library. See the [todo app](https://github.com/ThoughtWorksInc/todo/commit/54921cd4e1e7acf0b119b8bcd75c1a5c3f755f67#diff-96b7940afd1d65c4c49f5b434c0c764a2f1ecb133b12537b7144a8a05531457eR40-R43) for example.
+
+## Links
+
+- [Binding.scala](https://github.com/ThoughtWorksInc/Binding.scala)
+- [html.scala](https://github.com/Atry/html.scala)
+- [The legacy Binding.scala's routing library](https://github.com/atry/route.scala)
