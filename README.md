@@ -20,8 +20,8 @@ def rootView = {
     input.value
   }
   html"""<div>
-    $inputBinding
-    Your input value is ${ value.bind }
+    ${inputBinding.bind}
+    Your input value is ${value.bind}
   </div>"""
 }
 
