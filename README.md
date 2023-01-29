@@ -4,7 +4,7 @@
 [![Scaladoc](https://javadoc.io/badge/com.thoughtworks.binding/latestevent_sjs1_2.13.svg?label=scaladoc)](https://javadoc.io/page/com.thoughtworks.binding/latestevent_sjs1_2.13/latest/com/thoughtworks/binding/LatestEvent.html)
 [![Scala CI](https://github.com/ThoughtWorksInc/LatestEvent.scala/actions/workflows/scala.yml/badge.svg)](https://github.com/ThoughtWorksInc/LatestEvent.scala/actions/workflows/scala.yml)
 
-***LatestEvent*** is a library to track the latest event from HTML DOM objects and other event targets. It can be used with [html.scala](https://github.com/Atry/html.scala/) for bi-directional data-binding.
+***LatestEvent*** is a library to track the latest events from HTML DOM objects and other event targets. It can be used with [Binding.scala](https://github.com/ThoughtWorksInc/Binding.scala) and [html.scala](https://github.com/Atry/html.scala/) for bi-directional data-binding and routing.
 
 ## Getting Started
 
