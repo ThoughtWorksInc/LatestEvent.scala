@@ -12,7 +12,7 @@
 def rootView = {
   val inputBinding = html"<input>"
   val value = Binding {
-    val input = inputBinding.value
+    val input = inputBinding.bind
 
     // Automatically recaculate whenever `input` is changed
     LatestEvent.change(input).bind
