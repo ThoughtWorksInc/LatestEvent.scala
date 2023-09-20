@@ -4,7 +4,7 @@ import Ordering.Implicits._
 
 libraryDependencies += {
   if (VersionNumber(scalaJSVersion).numbers >= Seq(1L)) {
-    "org.scala-js" %%% "scalajs-dom" % "2.3.0"
+    "org.scala-js" %%% "scalajs-dom" % "2.7.0"
   } else {
     "org.scala-js" %%% "scalajs-dom" % "1.2.0"
   }
