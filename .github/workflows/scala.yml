@@ -22,7 +22,7 @@ jobs:
         include:
           - scala: 2.13.18
             sbt-args: ''
-          - scala: 3.4.1
+          - scala: 3.10.1
             sbt-args: ''
 
     steps:
