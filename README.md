@@ -6,8 +6,6 @@
 
 **LatestEvent.scala** is a library to track the latest events from HTML DOM objects and other event targets. It can be used with [Binding.scala](https://github.com/ThoughtWorksInc/Binding.scala) and [html.scala](https://github.com/Atry/html.scala/) for bidirectional data-binding and routing.
 
-The project supports Scala.js 1.x on Scala 2.13 and Scala 3.
-
 ## Getting Started
 
 ``` scala
